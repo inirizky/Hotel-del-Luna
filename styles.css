@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url("assets/heroImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: right top;
+    height: 86vh;
+}
+
+
+header h1{
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 50px;
+}
+
+nav ul{
+    color: white;
+    display: flex;
+    gap: 2em;
+    
+}
+
+nav ul li{
+    
+    list-style: none;
+}
+
+.hero-section{
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    gap: 3em;
+}
+
+.hero-section span{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+.hero-section span h2{
+    font-size: 42px;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.booking-section{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    gap: 18px;
+}
+
+.booking-section span{
+    
+    color: rgb(54, 54, 54);
+    font-size: 10px;
+}
+.booking-section span h2{
+    color: rgb(44, 44, 44);
+    font-size: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+}
+form input{
+    padding: 16px 6px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    background-color: #F7EDFF;
+}
+
+.btn-booking{
+    background-color: #7500DB;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    padding: 14px 30px;
+    color: #F7EDFF;
+    border-radius: 5px;
+}
+.btn-booking:hover{
+    background-color: #6800c4;
+}
+
+.recomendation-section{
+    padding: 36px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+}
+.recomendation-section h2{
+    font-size: 22px;
+}
+
+.list-hotel{
+    
+    display: flex;
+    gap: 1.5em;
+}
+
+
+.card-hotel{
+    border-radius: 12px;
+    color: #120220;
+    box-shadow: 0 4px 8px 0 rgba(96, 96, 96, 0.2), 0 2px 4px 0 rgba(80, 80, 80, 0.19);
+    display: flex;
+    flex-direction: column;
+    width: 196px;
+    overflow: hidden;
+}
+.card-img{
+    overflow: hidden;
+    width: 100%;
+    height: 140px;
+}
+
+.card-img img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 16px;
+}
+
+.card-content h2{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card-content p{
+    font-size: 10px;
+}
+
+.card-content span{
+    margin-top: 84px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.recomendation-section .btn-detail{
+    align-self: center;
+    margin-top: 24px;
+    width: 24%;
+    border-color: #7500DB;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    padding: 14px 30px;
+    color: black;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    text-decoration: none;
+}
