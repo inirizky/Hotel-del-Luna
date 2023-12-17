@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <h1>BookingAja</h1>
+            <h1><a href="/">BookingAja</a></h1>
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -23,38 +23,88 @@
     </header>
 
     <main>
-        <div class="content">    
-            <div class="img-section">
-                <img src="" alt="">
-            </div>
+        <swiper-container navigation="true" pagination="true" scrollbar="true">
+            <swiper-slide>  <img src="../assets/heroImg.png" alt=""></swiper-slide>
+            <swiper-slide>  <img src="../assets/heroImg.png" alt=""></swiper-slide>
+            <swiper-slide>  <img src="../assets/heroImg.png" alt=""></swiper-slide>
+        </swiper-container>
+             
             <div class="nav-content">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="">Info</a></li>
+                    <li>Ulasan</li>
+                    <li>Fasilitas</li>
+                    <li>Lokasi</li>
+                    <li>Tentang</li>
                 </ul>
             </div>
+            <div class="content"> 
             <div class="header-section">
-                <h2>Hotel Amelia</h2>
-                <p></p>
+                <div class="left-section">
+                    <div class="rating-hotel">
+                        <span>Hotel</span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h2>Hotel Amelia</h2>
+                    <p><i class="fa-solid fa-star"></i> 4.5/5 <span>(1.400 reviews)</span> </p>
+                </div>
+                <div class="right-section">
+                    <p>IDR 485.000 <span>/kamar/malam</span></p>
+                    <a class="btn-booking">Booking Now</a>
+                    
+                </div>
             </div>
             <div class="review-section">
-                <h2>Hotel Amelia</h2>
-                <p></p>
+                <h2>Ulasan</h2>
+                <div class="review-list">
+                    <div class="review-card">
+                        <div></div>
+                        <h3>Ini Rizky</h3>
+                        <p></p>
+                    </div>
+                    <div class="review-card">
+                        <div></div>
+                        <h3>Ini Rizky</h3>
+                        <p></p>
+                    </div>
+                    <div class="review-card">
+                        <div></div>
+                        <h3>Ini Rizky</h3>
+                        <p></p>
+                    </div>
+                    <div class="review-card">
+                        <div></div>
+                        <h3>Ini Rizky</h3>
+                        <p></p>
+                    </div>
+                </div>
             </div>
+
+
             <div class="facility-section">
-                <h2>Hotel Amelia</h2>
-                <p></p>
+                <h2>Fasilitas</h2>
+                <div class="facility-list">
+                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
+                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
+                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
+                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
+                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
+                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
+                    
+                   
+                </div>
             </div>
             <div class="location-section">
-                <h2>Hotel Amelia</h2>
-                <p></p>
+                <h2>Lokasi</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.411578835186!2d104.75403627407245!3d-2.9831694969928937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7608553bdef7%3A0x8e3084da3aa69e35!2sEmilia%20Hotel%20by%20Amazing!5e0!3m2!1sid!2sid!4v1702790500825!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="about-section">
-                <h2>Hotel Amelia</h2>
-                <p></p>
+                <h2>Tentang</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eos debitis? Dolorum cumque numquam repellendus fugiat provident, quas deleniti dolore exercitationem facere necessitatibus vitae dicta corrupti recusandae minus itaque corporis!</p>
             </div>
             
             <p></p>    
@@ -63,5 +113,7 @@
 
 
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/3b1298716a.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -181,3 +181,146 @@ form input{
     border-radius: 5px;
     text-decoration: none;
 }
+
+swiper-container{
+    width: 100%;
+    height: 65vh;
+}
+
+swiper-container img{
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+}
+
+
+swiper-container::part(bullet-active) {
+    background-color: #9a27ff;
+  }
+swiper-container::part(button-prev) {
+    color: white;
+}
+swiper-container::part(button-next) {
+    color: white;
+  }
+
+
+
+.content {
+    padding: 24px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.nav-content{
+    padding: 24px 72px;
+}
+.nav-content ul{
+    display: flex;
+    gap: 3em;
+}
+
+.nav-content ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section .left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.header-section .left-section .rating-hotel span{
+    font-size: 12px;
+    border: solid;
+    border-radius: 4px;
+    padding: 3px 4px;
+    
+}
+.header-section .left-section p span{
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+.header-section .left-section i{
+    font-size: 14px;
+    
+}
+.header-section .left-section h2{
+    font-size: 36px;
+}
+
+.header-section .left-section p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.header-section .left-section p i{
+    color: #ff5927;
+}
+.header-section .right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+.header-section .right-section p{
+    font-weight: 700;
+    font-size: 20px;
+    color: #ff5927;
+}
+.header-section .right-section p span{
+    font-weight: 600;
+    font-size: 12px;
+    color: #919090;
+}
+
+.review-section{
+    display:flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.review-list{
+    display: flex;
+    gap: 1em;
+}
+
+.review-card{
+    background-color: #9a27ff;
+    color: white;
+    width: 640px;
+    padding: 12px;
+    border-radius: 6px;
+
+}
+
+.facility-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.facility-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.facility-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #6800c4;
+    color: white;
+    padding: 24px;
+    width: 340px;
+}
