@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookingAja</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,12 +24,15 @@
     </header>
 
     <main>
-        <swiper-container navigation="true" pagination="true" scrollbar="true">
-            <swiper-slide>  <img src="../assets/heroImg.png" alt=""></swiper-slide>
-            <swiper-slide>  <img src="../assets/heroImg.png" alt=""></swiper-slide>
-            <swiper-slide>  <img src="../assets/heroImg.png" alt=""></swiper-slide>
-        </swiper-container>
-             
+        <div class="hotel-img">
+            <swiper-container navigation="true" pagination="true" scrollbar="true">
+                <swiper-slide>  <img src="../assets/heroImg.png" alt=""></swiper-slide>
+                <swiper-slide>  <img src="../assets/heroImg.png" alt=""></swiper-slide>
+                <swiper-slide>  <img src="../assets/heroImg.png" alt=""></swiper-slide>
+            </swiper-container>
+         </div>
+
+        
             <div class="nav-content">
                 <ul>
                     <li><a href="">Info</a></li>
@@ -58,41 +62,91 @@
                     
                 </div>
             </div>
+           
             <div class="review-section">
                 <h2>Ulasan</h2>
+               
                 <div class="review-list">
-                    <div class="review-card">
-                        <div></div>
-                        <h3>Ini Rizky</h3>
-                        <p></p>
-                    </div>
-                    <div class="review-card">
-                        <div></div>
-                        <h3>Ini Rizky</h3>
-                        <p></p>
-                    </div>
-                    <div class="review-card">
-                        <div></div>
-                        <h3>Ini Rizky</h3>
-                        <p></p>
-                    </div>
-                    <div class="review-card">
-                        <div></div>
-                        <h3>Ini Rizky</h3>
-                        <p></p>
-                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="review-card">
+                                <div></div>
+                                <h3>Ini Rizky</h3>
+                                <p></p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="review-card">
+                                <div></div>
+                                <h3>Ini Rizky</h3>
+                                <p></p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="review-card">
+                                <div></div>
+                                <h3>Ini Rizky</h3>
+                                <p></p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="review-card">
+                                <div></div>
+                                <h3>Ini Rizky</h3>
+                                <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                      </div>
+                    <swiper-container slides-per-view="3" space-between="20" navigation="true">
+                        <swiper-slide>
+                           
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="review-card">
+                                <div></div>
+                                <h3>Ini Rizky</h3>
+                                <p></p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="review-card">
+                                <div></div>
+                                <h3>Ini Rizky</h3>
+                                <p></p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="review-card">
+                                <div></div>
+                                <h3>Ini Rizky</h3>
+                                <p></p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="review-card">
+                                <div></div>
+                                <h3>Ini Rizky</h3>
+                                <p></p>
+                            </div>
+                        </swiper-slide>
+                    
+                    </swiper-container>
+                    
                 </div>
-            </div>
 
 
             <div class="facility-section">
                 <h2>Fasilitas</h2>
                 <div class="facility-list">
                     <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
-                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
-                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
-                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
-                    <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
+                    <div class="facility-item"><i class="fa-solid fa-wifi"></i>WIFI</div>
+                    <div class="facility-item"><i class="fa-solid fa-bell-concierge"></i>Resepsionis 24 Jam</div>
+                    <div class="facility-item"><i class="fa-solid fa-bath"></i>Shower dan Bathtub</div>
+                    <div class="facility-item"><i class="fa-solid fa-utensils"></i>Restorant BIntang 5</div>
                     <div class="facility-item"><i class="fa-solid fa-person-swimming"></i>Kolam Renang</div>
                     
                    
@@ -114,6 +168,15 @@
 
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/3b1298716a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        </script>
+<script src="https://kit.fontawesome.com/3b1298716a.js" crossorigin="anonymous"></script>
 </body>
 </html>

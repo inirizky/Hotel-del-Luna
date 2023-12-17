@@ -182,25 +182,25 @@ form input{
     text-decoration: none;
 }
 
-swiper-container{
+.hotel-img swiper-container{
     width: 100%;
     height: 65vh;
 }
 
-swiper-container img{
+.hotel-img swiper-container img{
     width: 100%;
     height: 680px;
     object-fit: cover;
 }
 
 
-swiper-container::part(bullet-active) {
+.hotel-img swiper-container::part(bullet-active) {
     background-color: #9a27ff;
   }
-swiper-container::part(button-prev) {
+.hotel-img swiper-container::part(button-prev) {
     color: white;
 }
-swiper-container::part(button-next) {
+.hotel-img swiper-container::part(button-next) {
     color: white;
   }
 
@@ -290,15 +290,56 @@ swiper-container::part(button-next) {
 }
 
 .review-list{
-    display: flex;
-    gap: 1em;
+
 }
+
+
+.review-list swiper-container{
+    width: 100%;
+}
+.swiper-navBtn {
+  color: #000;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.review-list swiper-container::part(button-prev) {
+    color: white;
+
+
+}
+.review-list swiper-container::part(button-next) {
+    color: white;
+  }
+
 
 .review-card{
     background-color: #9a27ff;
     color: white;
-    width: 640px;
-    padding: 12px;
+    padding: 12px 24px;
     border-radius: 6px;
 
 }
@@ -311,16 +352,15 @@ swiper-container::part(button-next) {
 .facility-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
+    justify-content: space-between  ;
+    width: 100%;
 }
 
 .facility-item{
     display: flex;
+    width: 18%;
+    height: 50px;
     align-items: center;
     gap: 10px;
-    background-color: #6800c4;
-    color: white;
-    padding: 24px;
-    width: 340px;
+
 }
