@@ -67,76 +67,55 @@
                 <h2>Ulasan</h2>
                
                 <div class="review-list">
+                    
                     <div class="swiper mySwiper">
+                        <div class="nav-slide">
+
+                            <div class="swiper-button-prev swiper-navBtn"></div>
+                            <div class="swiper-button-next swiper-navBtn"></div>
+                        </div>
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
                             <div class="review-card">
-                                <div></div>
+                                <div class="header-card">
+                                    <p><i class="fa-solid fa-star"></i> 4.5/5</p>
+                                    <span>23 Desember 2022</span>
+                                </div>
                                 <h3>Ini Rizky</h3>
-                                <p></p>
+                                <p>Bagus dan Hangat</p>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="review-card">
-                                <div></div>
+                                <div class="header-card">
+                                    <p><i class="fa-solid fa-star"></i> 4.5/5</p>
+                                    <span>23 Desember 2022</span>
+                                </div>
                                 <h3>Ini Rizky</h3>
-                                <p></p>
+                                <p>Bagus dan Hangat</p>
                             </div>
                           </div>
                           <div class="swiper-slide">
                             <div class="review-card">
-                                <div></div>
+                                <div class="header-card">
+                                    <p><i class="fa-solid fa-star"></i> 4.5/5</p>
+                                    <span>23 Desember 2022</span>
+                                </div>
                                 <h3>Ini Rizky</h3>
-                                <p></p>
+                                <p>Bagus dan Hangat</p>
                             </div>
                           </div>
-                          <div class="swiper-slide">
-                            <div class="review-card">
-                                <div></div>
-                                <h3>Ini Rizky</h3>
-                                <p></p>
-                            </div>
+                          
                           </div>
                         </div>
-                        <div class="swiper-button-next swiper-navBtn"></div>
-                        <div class="swiper-button-prev swiper-navBtn"></div>
+                       
                       </div>
-                    <swiper-container slides-per-view="3" space-between="20" navigation="true">
-                        <swiper-slide>
-                           
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div class="review-card">
-                                <div></div>
-                                <h3>Ini Rizky</h3>
-                                <p></p>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div class="review-card">
-                                <div></div>
-                                <h3>Ini Rizky</h3>
-                                <p></p>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div class="review-card">
-                                <div></div>
-                                <h3>Ini Rizky</h3>
-                                <p></p>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div class="review-card">
-                                <div></div>
-                                <h3>Ini Rizky</h3>
-                                <p></p>
-                            </div>
-                        </swiper-slide>
+                    </div>  
                     
-                    </swiper-container>
                     
-                </div>
+                      
+                    
+
 
 
             <div class="facility-section">
@@ -154,7 +133,7 @@
             </div>
             <div class="location-section">
                 <h2>Lokasi</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.411578835186!2d104.75403627407245!3d-2.9831694969928937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7608553bdef7%3A0x8e3084da3aa69e35!2sEmilia%20Hotel%20by%20Amazing!5e0!3m2!1sid!2sid!4v1702790500825!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.411578835186!2d104.75403627407245!3d-2.9831694969928937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7608553bdef7%3A0x8e3084da3aa69e35!2sEmilia%20Hotel%20by%20Amazing!5e0!3m2!1sid!2sid!4v1702790500825!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="about-section">
                 <h2>Tentang</h2>
@@ -171,10 +150,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+          
         });
         </script>
 <script src="https://kit.fontawesome.com/3b1298716a.js" crossorigin="anonymous"></script>

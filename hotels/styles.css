@@ -289,20 +289,33 @@ form input{
     gap: 1em;
 }
 
-.review-list{
-
+.swiper-button-next, .swiper-button-prev{
+        position: unset;
+        top: unset;
+        width: unset;
+        height: unset;
+        margin-top: unset;
+        z-index: unset;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
-
-.review-list swiper-container{
-    width: 100%;
+.nav-slide{
+    display: flex;
+    gap: 1em;
+    justify-content: end;
 }
+
 .swiper-navBtn {
   color: #000;
-  height: 40px;
-  width: 40px;
+
   background: #fff;
-  border-radius: 50%;
+  border: solid;
+  padding: 6px 16px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after {
@@ -311,12 +324,22 @@ form input{
 
 
   .swiper-slide {
-    text-align: center;
+   
     font-size: 18px;
-    background: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+  }
+  .swiper-slide {
+    width: 80%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
   }
 
   .swiper-slide img {
@@ -326,22 +349,34 @@ form input{
     object-fit: cover;
   }
 
-.review-list swiper-container::part(button-prev) {
-    color: white;
-
-
-}
-.review-list swiper-container::part(button-next) {
-    color: white;
-  }
-
 
 .review-card{
-    background-color: #9a27ff;
-    color: white;
-    padding: 12px 24px;
+    display: flex;
+    flex-direction: column;
+    color: black;
     border-radius: 6px;
+    width: 100%;
+    border: solid;
+    padding: 12px;
+    gap: 1em;
 
+}
+.review-card h3{
+    
+    font-size: 14px;
+
+}
+
+.review-card p{
+    font-size: 14px;
+
+}
+
+.header-card{
+    font-size: 12px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .facility-section{
