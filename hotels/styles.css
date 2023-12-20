@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -123,27 +124,31 @@ form input{
 
 .list-hotel-vertical{   
     display: flex;
-    gap: 1.5em;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 1.4em;
 }
 .list-hotel-horizontal{   
     display: flex;
     gap: 1.5em;
     flex-direction: column;
+   
 }
 
 .list-hotel-horizontal .card-hotel{
+    border: solid 1px rgba(96, 96, 96, 0.2);
     border-radius: 12px;
     color: #120220;
     box-shadow: 0 4px 8px 0 rgba(96, 96, 96, 0.2), 0 2px 4px 0 rgba(80, 80, 80, 0.19);
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 240px;
+    height: 224px;
     overflow: hidden;
 }
 .list-hotel-horizontal .card-img{
     overflow: hidden;
-    width: 26%;
+    width: 42%;
     height: 100%;
 }
 
@@ -157,32 +162,76 @@ form input{
 .list-hotel-horizontal .card-content{
     display: flex;
     flex-direction: column;
-    padding: 10px 16px;
+    padding: 16px 24px;
+    gap: 0.4em;
+    justify-content: space-between;
+    width: 100%;
 }
 
+.list-hotel-horizontal .card-content .top-section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+.list-hotel-horizontal .card-content .center-section{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    align-items: flex-end; 
+}
+.list-hotel-horizontal .card-content .bottom-section{
+    display: flex;
+    gap: 0.4em    ;
+    border-top: solid 1px rgba(96, 96, 96, 0.509);
+    padding-top: 10px;
+}
+
+.list-hotel-horizontal .card-content .bottom-section span{
+    background-color: #0dab53;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
 .list-hotel-horizontal .card-content h2{
-    margin-bottom: 10px;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .list-hotel-horizontal .card-content p{
-    font-size: 10px;
-}
-
-.list-hotel-horizontal .card-content span{
-    margin-top: 84px;
-    margin-bottom: 10px;
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 700;
+    
 }
 
+.list-hotel-horizontal .card-content p i{
+    color: #ff5927;
+}
+.list-hotel-horizontal .card-content p span{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.list-hotel-horizontal .card-content .price{
+    color:  #ff5927;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.list-hotel-horizontal .card-content .center-section span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #7e7485;
+}
 .list-hotel-vertical .card-hotel{
     border-radius: 12px;
     color: #120220;
-    box-shadow: 0 4px 8px 0 rgba(96, 96, 96, 0.2), 0 2px 4px 0 rgba(80, 80, 80, 0.19);
-    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(108, 108, 108, 0.2), 0 2px 4px 0 rgba(124, 124, 124, 0.19);
+    display: flex;  
     flex-direction: column;
-    width: 196px;
+    width: 216px;
     overflow: hidden;
 }
 .list-hotel-vertical .card-img{
@@ -206,16 +255,26 @@ form input{
 
 .list-hotel-vertical .card-content h2{
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .list-hotel-vertical .card-content p{
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    
 }
 
-.list-hotel-vertical .card-content span{
-    margin-top: 84px;
-    margin-bottom: 10px;
+.list-hotel-vertical .card-content p i{
+    color: #ff5927;
+}
+.list-hotel-vertical .card-content p span{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.list-hotel-vertical .card-content .price{
+    padding-top: 80px;
     font-weight: 600;
     font-size: 16px;
 }
@@ -267,14 +326,14 @@ form input{
 
 
 .content {
-    padding: 24px 72px;
+    padding: 0 72px;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+
 }
 
 .nav-content{
-    padding: 24px 72px;
+    padding: 12px 72px;
     position: sticky;
     top: 0;
     left: 0;
@@ -283,7 +342,7 @@ form input{
     transition: 0.6s;
 }
  .sticky{
-    padding: 12px 72px;
+    padding: 16px 72px;
     background-color: #fff;
    
 
@@ -300,6 +359,7 @@ form input{
 }
 
 .header-section{
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -357,10 +417,13 @@ form input{
 }
 
 .review-section{
+    padding-top: 60px;
     display:flex;
     flex-direction: column;
     gap: 1em;
 }
+
+.mySwiper{margin-top: -40px;}
 
 .swiper-button-next, .swiper-button-prev{
         position: unset;
@@ -383,9 +446,9 @@ form input{
 
 .swiper-navBtn {
   color: #000;
-
+  box-shadow: 0 12px 16px 0 rgba(108, 108, 108, 0.2), 0 6px 4px 0 rgba(124, 124, 124, 0.19);
   background: #fff;
-  border: solid;
+  border:solid 1px rgba(108, 108, 108, 0.2);
   padding: 6px 16px;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -406,6 +469,7 @@ form input{
   }
   .swiper-slide {
     width: 40%;
+    
   }
 
   /* .swiper-slide:nth-child(2n) {
@@ -432,7 +496,8 @@ form input{
     border-radius: 6px;
     width: 100%;
     height: 140px;
-    border: solid;
+    border:solid 1px rgba(108, 108, 108, 0.2);
+    box-shadow: 0 12px 16px 0 rgba(108, 108, 108, 0.2), 0 6px 4px 0 rgba(124, 124, 124, 0.19);
     padding: 12px;
     gap: 1em;
 
@@ -456,6 +521,7 @@ form input{
 }
 
 .facility-section{
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -474,4 +540,128 @@ form input{
     align-items: center;
     gap: 10px;
 
+}
+
+.about-section{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.recomendation-section-content{
+    padding-top: 80px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+}
+
+footer{
+    
+    padding: 36px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 72px;
+}
+
+.footer-content{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.footer-content h2{
+    font-size: 20px;
+}
+.footer-content p{
+    font-size: 14px;
+}
+
+footer .left-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 30%;
+}
+footer .center-footer{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 20%;
+}
+
+footer .center-footer ul{
+    list-style: none;
+    display: flex;
+   
+    gap: 0.6em;
+}
+
+footer .center-footer ul li{
+    display: flex;
+    gap: 0.6em;
+}
+footer .center-footer ul .fa-instagram{
+    background-color: #c40090;
+    color: white;
+    border-radius: 50%;
+    padding: 16px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .center-footer ul .fa-tiktok{
+    background-color: #0b001c;
+    color: white;
+    border-radius: 50%;
+    padding: 16px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .center-footer ul .fa-youtube{
+    background-color: #c40000;
+    color: white;
+    border-radius: 50%;
+    padding: 16px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer .right-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 30%;
+    font-weight: 600;
+    color: #7e7485;
+}
+
+footer .right-footer .download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+footer .right-footer .download img{
+    width: 140px ;
+    
+    display: block;
 }

@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Del Luna</title>
+    <title>Kamar Hotel - Hotel Del Luna</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" id="favicon" href="/assets/first.ico" type="image/x-icon" />
 </head>
 <body>
     <header>
         <nav>
-            <h1> <a href="/">Hotel Del Luna</a></h1>
+            <h1><a href="/">Hotel Del Luna</a></h1>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Service</li>
-                <li class="btn-primary">Booking Now</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#recomendation">Recomendation</a></li>
+                <li><a href="/#service">Services</a></li>
+                <li><a href="/#location">Location</a></li>
             </ul>
         </nav>
         
@@ -23,98 +24,191 @@
     </header>
 
     <main>
-        <div class="recomendation-section">        
-            <h2>Rekomendasi Penginapan Terdekat</h2>
-            <div class="list-hotel-vertical">
-                <div class="card-hotel">
-                    <div class="card-img">
-                        <img src="../assets/heroImg.png" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
-                    </div>
-                </div>
-                <div class="card-hotel">
-                    <div class="card-img">
-                        <img src="../assets/heroImg.png" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
-                    </div>
-                </div>
-                <div class="card-hotel">
-                    <div class="card-img">
-                        <img src="../assets/heroImg.png" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
-                    </div>
-                </div>
-                <div class="card-hotel">
-                    <div class="card-img">
-                        <img src="../assets/heroImg.png" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
-                    </div>
-                </div>
-            </div>
-            <a class="btn-detail"href="hotels/index.html">Lihat Semua</a>
+        <div class="recomendation-section" id="recomendation">        
+            <h2>Kamar Hotel</h2>
+            
             <div class="list-hotel-horizontal">
-                <div class="card-hotel">
+                <a href="/hotels/executive-suite.html" class="card-hotel">
                     <div class="card-img">
-                        <img src="../assets/heroImg.png" alt="">
+                        <img src="https://media.radissonhotels.net/image/radisson-hotel-lampung-kedaton/executive-suite-1-bedroom-apartment-junior-suite/16256-122456-f66810205_4k.jpg?impolicy=GalleryLightboxFullscreen" alt="">
                     </div>
                     <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
+                        <div class="top-section">
+                            <h2>Executive Suite</h2>
+                            <p><i class="fa-solid fa-star"></i> 4.5 <span>(1.400 reviews)</span> </p>
+                        </div>
+                        <div class="center-section">
+                            <p class="price">IDR 2.413.600</p>
+                            <span>/malam (termasuk pajak)</span>
+                        </div>
+                        <div class="bottom-section">
+                            <span>Free Breakfast</span>
+                            <span>Swimming Pool</span>
+                            <span>Bathtub</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card-hotel">
+                </a>
+                <a href="/hotels/studio-suite.html" class="card-hotel">
                     <div class="card-img">
-                        <img src="../assets/heroImg.png" alt="">
+                        <img src="https://media.radissonhotels.net/image/radisson-golf-convention-center-batam/suite/16256-114034-f72650054_3xl.jpg?impolicy=GalleryLightboxFullscreen" alt="">
                     </div>
                     <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
+                        <div class="top-section">
+                            <h2>Studio Suite</h2>
+                            <p><i class="fa-solid fa-star"></i> 4.5 <span>(1.400 reviews)</span> </p>
+                        </div>
+                        <div class="center-section">
+                            <p class="price">IDR 3.635.000</p>
+                            <span>/malam (termasuk pajak)</span>
+                        </div>
+                        <div class="bottom-section">
+                            <span>Free Breakfast</span>
+                            <span>Swimming Pool</span>
+                            <span>Bathtub</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card-hotel">
+                </a>
+                <a href="/hotels/deluxe-room.html" class="card-hotel">
                     <div class="card-img">
-                        <img src="../assets/heroImg.png" alt="">
+                        <img src="https://media.radissonhotels.net/image/radisson-hotel-lampung-kedaton/guestroom/16256-122456-f73191570_3xl.jpg?impolicy=GalleryLightboxFullscreen" alt="">
                     </div>
                     <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
+                        <div class="top-section">
+                            <h2>Deluxe Room</h2>
+                            <p><i class="fa-solid fa-star"></i> 4.5 <span>(1.400 reviews)</span> </p>
+                        </div>
+                        <div class="center-section">
+                            <p class="price">IDR 1.125.000</p>
+                            <span>/malam (termasuk pajak)</span>
+                        </div>
+                        <div class="bottom-section">
+                            <span>Free Breakfast</span>
+                            <span>Swimming Pool</span>
+                            <span>Bathtub</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card-hotel">
+                </a>
+                <a href="/hotels/presidential-suite.html" class="card-hotel">
                     <div class="card-img">
-                        <img src="../assets/heroImg.png" alt="">
+                        <img src="https://media.radissonhotels.net/image/radisson-golf-convention-center-batam/suite/16256-114034-f73285761_3xl.jpg?impolicy=GalleryLightboxFullscreen" alt="">
                     </div>
                     <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
+                        <div class="top-section">
+                            <h2>Presidential Suite</h2>
+                            <p><i class="fa-solid fa-star"></i> 4.5 <span>(1.400 reviews)</span> </p>
+                        </div>
+                        <div class="center-section">
+                            <p class="price">IDR 12.419.000</p>
+                            <span>/malam (termasuk pajak)</span>
+                        </div>
+                        <div class="bottom-section">
+                            <span>Free Breakfast</span>
+                            <span>Swimming Pool</span>
+                            <span>Bathtub</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+                <a href="/hotels/junior-suite.html" class="card-hotel">
+                    <div class="card-img">
+                        <img src="https://media.radissonhotels.net/image/radisson-hotel-lampung-kedaton/junior-suite/16256-122456-f66810207_4k.jpg?impolicy=GalleryLightboxFullscreen" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="top-section">
+                            <h2>Junior Suite</h2>
+                            <p><i class="fa-solid fa-star"></i> 4.5 <span>(1.400 reviews)</span> </p>
+                        </div>
+                        <div class="center-section">
+                            <p class="price">IDR 1.905.000</p>
+                            <span>/malam (termasuk pajak)</span>
+                        </div>
+                        <div class="bottom-section">
+                            <span>Free Breakfast</span>
+                            <span>Swimming Pool</span>
+                            <span>Bathtub</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/hotels/superior-room-twin.html" class="card-hotel">
+                    <div class="card-img">
+                        <img src="https://media.radissonhotels.net/image/radisson-hotel-lampung-kedaton/superior-room/16256-122456-f66810311_4k.jpg?impolicy=GalleryLightboxFullscreen" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="top-section">
+                            <h2>Superior Room - Twin</h2>
+                            <p><i class="fa-solid fa-star"></i> 4.5 <span>(1.400 reviews)</span> </p>
+                        </div>
+                        <div class="center-section">
+                            <p class="price">IDR 895.000</p>
+                            <span>/malam (termasuk pajak)</span>
+                        </div>
+                        <div class="bottom-section">
+                            <span>Free Breakfast</span>
+                            <span>Swimming Pool</span>
+                            <span>Bathtub</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="/hotels/superior-room-king.html" class="card-hotel">
+                    <div class="card-img">
+                        <img src="https://media.radissonhotels.net/image/radisson-hotel-lampung-kedaton/superior-room/16256-122456-f66810299_4k.jpg?" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="top-section">
+                            <h2>Superior Room - King</h2>
+                            <p><i class="fa-solid fa-star"></i> 4.5 <span>(1.400 reviews)</span> </p>
+                        </div>
+                        <div class="center-section">
+                            <p class="price">IDR 895.000</p>
+                            <span>/malam (termasuk pajak)</span>
+                        </div>
+                        <div class="bottom-section">
+                            <span>Free Breakfast</span>
+                            <span>Swimming Pool</span>
+                            <span>Bathtub</span>
+                        </div>
+                    </div>
+                </a>
+                
             </div>
         </div>
         
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <div class="footer-content">
+            <div class="left-footer">
+                <h2>Hotel Del Luna</h2>
+                <p>Menggabungkan kemewahan dan keanggunan untuk menciptakan pengalaman menginap yang tak terlupakan</p>
+            </div>
+            <div class="center-footer">
+                <h2>Follow Us</h2>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://instagram.com/inirizky"  target="_blank"class="fa-brands fa-instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://tiktok.com/@disinikuy"  target="_blank"  class="fa-brands fa-tiktok"></a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/@inirizky" target="_blank" class="fa-brands fa-youtube"></a>
+                        </li>
+                        
+                
+                    </ul>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="download">
+                    <img src="/assets/googleplay.svg" alt="">
+                    <img src="/assets/appstore.svg" alt="">
+                </div>
+                <span>© 2009 - 2023, PT. Hotel Mantap.</span> 
+            </div>
+        </div>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/3b1298716a.js" crossorigin="anonymous"></script>
 </body>
 </html>

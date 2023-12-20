@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Del Luna</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" id="favicon" href="/assets/first.ico" type="image/x-icon" />
 </head>
 <body>
     <header>
@@ -14,13 +15,17 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#recomendation">Recomendation</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#testimoni">Testimonial</a></li>
+                <li><a href="/#location">Location</a></li>
             </ul>
         </nav>
         <div class="hero-section" id="home">
             <span>Booking Kamar Mudah di <h2>Hotel Del Luna</h2></span>
             <div class="booking-section">
-                <span><i class="fa fa-map-marker" aria-hidden="true"></i>Pesan Kamar Sekarang Dapatkan <h2>Promo hingga 50%</h2> </span>
+                <div class="promo">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <span>Pesan Kamar Sekarang Dapatkan <h2>Promo hingga 50%</h2> </span>
+                    
+                </div>
         
                     <form action="" method="post">
                         <input type="number" id="fname" required placeholder="Ada berapa orang?" name="fname">
@@ -43,56 +48,58 @@
         <div class="recomendation-section" id="recomendation">        
             <h2>Rekomendasi Kamar Terfavorit</h2>
             <div class="list-hotel">
-                <a class="card-hotel" href="/hotels/ameliahotel.html">
+                <a class="card-hotel" href="/hotels/classic-king-studio.html">
                     <div class="card-img">
-                        <img src="assets/heroImg.png" alt="">
+                        <img src="https://pix8.agoda.net/hotelImages/25542493/-1/1afaece8ddaf07d167453970d431ed5a.jpg?" alt="">
                     </div>
                     <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
+                        <h2>Classic King Studio</h2>
+                        <p><i class="fa-solid fa-star"></i> 4.5 <span>(1.400 reviews)</span> </p>
+                        <span class="price">IDR 725.000</span>
                     </div>
                 </a>
-                <div class="card-hotel">
+                <a class="card-hotel" href="/hotels/superior-room-twin.html">
                     <div class="card-img">
-                        <img src="assets/heroImg.png" alt="">
+                        <img src="https://media.radissonhotels.net/image/radisson-hotel-lampung-kedaton/superior-room/16256-122456-f66810311_4k.jpg?impolicy=GalleryLightboxFullscreen" alt="">
                     </div>
                     <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
+                        <h2>Superior Room - Twin</h2>
+                        <p><i class="fa-solid fa-star"></i> 4.3 <span>(2.004 reviews)</span> </p>
+                        <span class="price">IDR 895.000</span>
                     </div>
-                </div>
-                <div class="card-hotel">
+                </a>
+                <a class="card-hotel" href="/hotels/superior-room-king.html">
                     <div class="card-img">
-                        <img src="assets/heroImg.png" alt="">
+                        <img src="https://media.radissonhotels.net/image/radisson-hotel-lampung-kedaton/superior-room/16256-122456-f66810299_4k.jpg?" alt="">
                     </div>
                     <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
+                        <h2>Superior Room - King</h2>
+                        <p><i class="fa-solid fa-star"></i> 4.7 <span>(1.400 reviews)</span> </p>
+                        <span class="price">IDR 895.000</span>
                     </div>
-                </div>
-                <div class="card-hotel">
+                </a>
+                <a class="card-hotel" href="/hotels/studio-suite.html">
                     <div class="card-img">
-                        <img src="assets/heroImg.png" alt="">
+                        <img src="https://media.radissonhotels.net/image/radisson-golf-convention-center-batam/suite/16256-114034-f72650054_3xl.jpg?impolicy=GalleryLightboxFullscreen" alt="">
                     </div>
                     <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
+                        <h2>Studio Studio</h2>
+                        <p><i class="fa-solid fa-star"></i> 4.5 <span>(1.400 reviews)</span> </p>
+                        <span class="price">IDR 3.635.000</span>
                     </div>
-                </div>
-                <div class="card-hotel">
+                </a>
+                <a class="card-hotel" href="/hotels/presidential-suite.html">
                     <div class="card-img">
-                        <img src="assets/heroImg.png" alt="">
+                        <img src="https://media.radissonhotels.net/image/radisson-golf-convention-center-batam/suite/16256-114034-f73285761_3xl.jpg?impolicy=GalleryLightboxFullscreen" alt="">
                     </div>
                     <div class="card-content">
-                        <h2>Hotel Amelia</h2>
-                        <p>Juanda, Bandung</p>
-                        <span>IDR 485.000</span>
+                        <h2>Presidential Suite</h2>
+                        <p><i class="fa-solid fa-star"></i> 4.9 <span>(30 reviews)</span> </p>
+                        <span class="price">IDR 12.419.000</span>
                     </div>
-                </div>
+                </a>
+                
+                
             </div>
             <a class="btn-detail"href="hotels/index.html">Lihat Semua</a>
         </div>
@@ -100,19 +107,22 @@
         <div class="services-section" id="services">
             <h2>Services</h2>
             <div class="service-list">
-                <div class="service-card">
-                    <h3>Kamar Hotel</h3>
-                </div>
-                <div class="service-card">
+                <a href="/hotels/index.html" class="service-card">
+                    <img src="https://media.radissonhotels.net/image/radisson-golf-convention-center-batam/suite/16256-114034-f72650054_3xl.jpg?impolicy=GalleryLightboxFullscreen" alt="">
+                    <h3>Suite</h3>
+                </a>
+                <a href="/ball-room.html" class="service-card">
                     <h3>Ball Room</h3>
-                </div>
-                <div class="service-card">
-                    <h3>Restaurant</h3>
-                </div>
+                    <img src="https://images.unsplash.com/photo-1579254216547-a90bea451479?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </a>
+                <a href="/sport-center.html" class="service-card">
+                    <h3>Sport Center</h3>
+                    <img src="https://images.unsplash.com/photo-1570829460005-c840387bb1ca?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </a>
             </div>
 
         </div>
-        <div class="location-section">
+        <div class="location-section" id="location">
             <h2>Lokasi</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.4521097973698!2d127.04377919999999!3d37.54441070000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca46e21c25855%3A0xb969fc2b68758946!2sSM%20ENTERTAINMENT!5e0!3m2!1sid!2sid!4v1702918753187!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -125,33 +135,37 @@
         <div class="footer-content">
             <div class="left-footer">
                 <h2>Hotel Del Luna</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius debitis deserunt quibusdam quam a delectus, sapiente eligendi, ex atque voluptatem repellat provident voluptatum magnam tenetur recusandae odio corrupti nesciunt nemo.</p>
+                <p>Menggabungkan kemewahan dan keanggunan untuk menciptakan pengalaman menginap yang tak terlupakan</p>
             </div>
             <div class="center-footer">
-                <h2>Navigation</h2>
+                <h2>Follow Us</h2>
                 <div>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#recomendation">Recomendation</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#testimoni">Testimonial</a></li>
+                        <li>
+                            <i class="fa-brands fa-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/@inirizky" target="_blank" class="fa-brands fa-youtube"></a>
+                        </li>
+                        
+                
                     </ul>
                 </div>
             </div>
             <div class="right-footer">
-                <h2>Follow Us</h2>
-                <div>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#recomendation">Recomendation</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#testimoni">Testimonial</a></li>
-                    </ul>
+                <div class="download">
+                    <img src="/assets/googleplay.svg" alt="">
+                    <img src="/assets/appstore.svg" alt="">
                 </div>
+                <span>© 2009 - 2023, PT. Hotel Mantap.</span> 
             </div>
         </div>
-        <div>Hotel Del Luna</div>
+        
     </footer>
     <script src="/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/3b1298716a.js" crossorigin="anonymous"></script>
 </body>
 </html>
